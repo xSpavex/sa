@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
   .setTitle("🏓 Pong!")
   .setColor('RANDOM')
   .setTimestamp()
-  .setDescription(`Gecikme: **${m.createdTimestamp - message.createdTimestamp}**ms
+  .setDescription(`Gecikme: **${ping.createdTimestamp - message.createdTimestamp}**ms
   	API Gecikme: **${Math.round(client.ws.ping)}**ms`)
   .setFooter(`Bu komutu kullanan kullanıcı ${message.author.tag}`, message.author.displayAvatarURL());
 
